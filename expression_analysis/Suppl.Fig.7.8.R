@@ -120,3 +120,9 @@ LabelClusters(plot, id = "predicted_0.5", clusters = keep,
               repel = T,
               size = 5,
               fontface = "bold")
+
+FeaturePlot(query, reduction = "umap", 
+            cols = c("dodgerblue", "firebrick"),
+            order = T,
+            pt.size = 0.4,
+            features = "prediction_probability")
